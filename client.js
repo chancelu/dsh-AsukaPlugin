@@ -412,7 +412,20 @@ textarea,input,[contenteditable="true"]{caret-color:#FF3D14;}
 .eva02-boot-art{position:relative;display:block;height:calc((100vh - 52px) * 1.12);width:auto;max-width:none;
   mix-blend-mode:screen;filter:none;}
 .eva02-boot-right:has(.eva02-boot-art){filter:none;flex:1 1 0;min-width:0;align-self:stretch;justify-items:center;}
-.eva02-boot-right:has(.eva02-boot-art) .eva02-gauge{right:2%;bottom:6%;}
+.eva02-boot-right:has(.eva02-boot-art) .eva02-gauge{right:2%;bottom:6%;width:min(22vw,250px);}
+/* bigger stage: the mech fills the right side, the left column reads at a glance */
+.eva02-boot-stage{gap:2vw;padding:0 clamp(24px,4.5vw,96px);}
+.eva02-boot-art{height:calc((100vh - 52px) * 1.4);margin:-6vh 0;}
+.eva02-boot-right .eva02-atf{width:min(52vw,105vh);height:auto;overflow:visible;}
+.eva02-boot-left{gap:14px;flex:0 1 auto;max-width:min(860px,48vw);}
+.eva02-boot-kicker{font-size:clamp(11px,1vw,15px);}
+.eva02-boot-unit{font-size:clamp(56px,11.5vw,200px);}
+.eva02-boot-pilot{font-size:clamp(12px,1.35vw,20px);}
+.eva02-boot-log{margin-top:20px;gap:6px;font-size:clamp(12px,1.12vw,17px);}
+.eva02-boot-meter{margin-top:24px;height:14px;}
+.eva02-boot-left .eva02-wave{height:clamp(40px,5.5vh,64px);gap:4px;margin-top:16px;}
+.eva02-boot-left .eva02-wave i{max-width:none;}
+.eva02-boot-meter-label,.eva02-boot-skip{font-size:clamp(10px,.85vw,13px);}
 .eva02-atf polygon{fill:none;stroke:#FF8A3D;stroke-width:1.6;transform-origin:50% 50%;transform-box:fill-box;
   opacity:0;animation:eva02-atf 2.6s cubic-bezier(.2,.7,.3,1) infinite;}
 .eva02-atf polygon:nth-child(2){animation-delay:.85s;}
